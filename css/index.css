@@ -142,12 +142,17 @@ html {
   font-size: 62.5%;
 }
 body {
-  width: 80%;
+  width: 60%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #5b6b73;
+}
+@media screen and (max-width: 500px) {
+  body {
+    width: 95%;
+  }
 }
 h1,
 h2,
@@ -173,6 +178,7 @@ p {
 hr {
   width: 100%;
   border: 0.1rem solid black;
+  margin-bottom: 2rem;
 }
 /* header */
 #header {
@@ -202,25 +208,61 @@ hr {
   width: 30%;
   margin: 3rem;
 }
+@media screen and (max-width: 500px) {
+  #top-section .intro img {
+    width: 50%;
+  }
+}
 #top-section .intro h1 {
   font-size: 3.5rem;
 }
 /* bottom section */
-#bottom-section .skills {
-  background-color: aqua;
-  border: 1px solid black;
+#bottom-section .skills h2 {
+  border: 0.1rem solid black;
+  background-color: #7b9595;
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
 }
 #bottom-section .work-history {
-  background-color: aqua;
-  border: 1px solid black;
+  padding-bottom: 2rem;
+}
+#bottom-section .work-history h2 {
+  border: 0.1rem solid black;
+  background-color: #7b9595;
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+}
+#bottom-section .work-history ul {
+  border: 1px dashed black;
+  margin: 0 auto;
+  padding-top: 1rem;
+}
+#bottom-section .work-history ul li {
+  text-align: center;
+  font-size: 1.8rem;
 }
 /* contact information*/
-#contact {
-  background-color: aqua;
-  border: 1px solid black;
+#contact h2 {
+  border: 0.1rem solid black;
+  background-color: #7b9595;
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
 }
 /* footer */
 #footer {
-  background-color: aqua;
-  border: 1px solid black;
+  padding: 0 20%;
+  margin-bottom: 5%;
+  width: 30%;
+}
+#footer ul {
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+}
+#footer ul li {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }

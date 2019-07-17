@@ -69,10 +69,16 @@ html, body {
 	line-height: 3rem;
 	text-align: center;
 }
-
 .background(){
 	background-color: aqua;
 	border: 1px solid black;
+}
+.section-heading(){
+	border: 0.1rem solid black;
+	background-color: rgb(123, 149, 149);
+	width: 50%;
+	margin: 0 auto;
+	margin-bottom: 1.5rem;
 }
 
 /* elements would be repeated */
@@ -80,16 +86,18 @@ html{
 	box-sizing: border-box;
 	font-size: 62.5%
 }
-
 body{
-	width: 80%;
+	width: 60%;
 	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	background-color: rgb(91, 107, 115);
+	//body media query
+	@media screen and (max-width:500px) {
+		width: 95%;
+	}
 }
-
 h1, h2, h3{
 	.paragraph();
 }
@@ -99,14 +107,13 @@ img{
 	height: auto;
 	border: 0.5rem solid black;
 }
-
 p{
 	.paragraph();
 }
-
 hr{
 	width: 100%;
 	border: 0.1rem solid black;
+	margin-bottom: 2rem;
 }
 
 /* header */
@@ -140,6 +147,10 @@ hr{
 		img{
 			width: 30%;
 			margin: 3rem;
+			//img media query
+			@media screen and (max-width:500px) {
+				width: 50%;
+			}
 		}
 		h1{
 			font-size: 3.5rem;
@@ -149,21 +160,54 @@ hr{
 
 /* bottom section */
 #bottom-section{
+	//.background();
 	.skills{
-		.background();
-
+		//.background();
+		h2{
+			.section-heading();
+		}
 	}
 	.work-history{
-		.background();
+		//.background();
+		padding-bottom: 2rem;
+		h2{
+			.section-heading();
+		}
+		ul{
+			//.background();
+			border: 1px dashed black;
+			margin: 0 auto;
+			padding-top: 1rem;
+			li{
+				//.background();
+				text-align: center;
+				font-size: 1.8rem;
+			}
+		}
 	}
 }
 
 /* contact information*/
 #contact{
-	.background();
+	// .background();
+	h2{
+		.section-heading();
+	}
 }
 
 /* footer */
 #footer{
-	.background();
+	//.background();
+	padding: 0 20%;
+	margin-bottom: 5%;
+	width: 30%;
+	ul{
+		display: flex;
+		justify-content: center;
+		font-size: 3rem;
+		li{
+			padding-left: 2rem;
+			padding-right: 2rem;
+		}
+	}
 }
