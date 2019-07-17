@@ -224,6 +224,29 @@ hr {
   margin: 0 auto;
   margin-bottom: 1.5rem;
 }
+#bottom-section .skills table {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  line-height: 3rem;
+  text-align: center;
+  font-size: 1.3rem;
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+#bottom-section .skills table td,
+#bottom-section .skills table th {
+  border: 0.25rem solid #242a2a;
+  text-align: center;
+  padding: 0.2rem;
+}
+#bottom-section .skills table tr:nth-child(even) {
+  background-color: #4f918d;
+}
+#bottom-section .skills table tr:nth-child(odd) {
+  background-color: #6c9a9a;
+}
 #bottom-section .work-history {
   padding-bottom: 2rem;
 }
