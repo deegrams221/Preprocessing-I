@@ -58,7 +58,7 @@ html, body {
 }
 
 /* variables */
-@main-color:skyblue;
+@main-color:rgb(91, 107, 115);
 @main-content-font: 'Roboto Slab', serif;
 
 /* mixins */
@@ -71,17 +71,17 @@ html, body {
 }
 .background(){
 	background-color: aqua;
-	border: 1px solid black;
+	border: 2px solid black;
 }
 .section-heading(){
-	border: 0.1rem solid black;
+	border: 0.2rem solid black;
 	background-color: rgb(123, 149, 149);
 	width: 50%;
 	margin: 0 auto;
 	margin-bottom: 1.5rem;
 }
 
-/* elements would be repeated */
+/* elements that would be repeated */
 html{
 	box-sizing: border-box;
 	font-size: 62.5%
@@ -92,7 +92,7 @@ body{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background-color: rgb(91, 107, 115);
+	background-color: @main-color;
 	//body media query
 	@media screen and (max-width:500px) {
 		width: 95%;
@@ -161,18 +161,25 @@ hr{
 /* bottom section */
 #bottom-section{
 	//.background();
+	width: 100%;
 	.skills{
 		//.background();
 		h2{
 			.section-heading();
 		}
 		table {
+			//.background();
 			.paragraph();
 			font-size: 1.3rem;
 			border-collapse: collapse;
-			width: 100%;
+			width: 80%;
+			display: flex;
+			justify-content: center;
+			margin: 0 auto;
 			margin-bottom: 2rem;
 		  	td, th {
+				//.background();
+				width: 200rem;
 				border: 0.25rem solid #242a2a; 
 				text-align: center;
 				padding: 0.2rem;

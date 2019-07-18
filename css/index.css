@@ -136,7 +136,7 @@ body {
 }
 /* variables */
 /* mixins */
-/* elements would be repeated */
+/* elements that would be repeated */
 html {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -217,8 +217,11 @@ hr {
   font-size: 3.5rem;
 }
 /* bottom section */
+#bottom-section {
+  width: 100%;
+}
 #bottom-section .skills h2 {
-  border: 0.1rem solid black;
+  border: 0.2rem solid black;
   background-color: #7b9595;
   width: 50%;
   margin: 0 auto;
@@ -232,11 +235,15 @@ hr {
   text-align: center;
   font-size: 1.3rem;
   border-collapse: collapse;
-  width: 100%;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
   margin-bottom: 2rem;
 }
 #bottom-section .skills table td,
 #bottom-section .skills table th {
+  width: 200rem;
   border: 0.25rem solid #242a2a;
   text-align: center;
   padding: 0.2rem;
@@ -251,7 +258,7 @@ hr {
   padding-bottom: 2rem;
 }
 #bottom-section .work-history h2 {
-  border: 0.1rem solid black;
+  border: 0.2rem solid black;
   background-color: #7b9595;
   width: 50%;
   margin: 0 auto;
@@ -268,7 +275,7 @@ hr {
 }
 /* contact information*/
 #contact h2 {
-  border: 0.1rem solid black;
+  border: 0.2rem solid black;
   background-color: #7b9595;
   width: 50%;
   margin: 0 auto;
