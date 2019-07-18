@@ -74,11 +74,15 @@ html, body {
 	border: 2px solid black;
 }
 .section-heading(){
-	border: 0.2rem solid black;
+	border: 0.12rem outset rgb(195, 196, 196);
 	background-color: rgb(123, 149, 149);
-	width: 50%;
+	width: 25%;
 	margin: 0 auto;
 	margin-bottom: 1.5rem;
+	//section headings media query
+	@media screen and (max-width: 500px) {
+		width: 50%;
+	}
 }
 
 /* elements that would be repeated */
@@ -101,7 +105,6 @@ body{
 h1, h2, h3{
 	.paragraph();
 }
-
 img{
 	width: 100%;
 	height: auto;
@@ -112,7 +115,7 @@ p{
 }
 hr{
 	width: 100%;
-	border: 0.1rem solid black;
+	border: 0.12rem dashed black;
 	margin-bottom: 2rem;
 }
 
@@ -214,7 +217,8 @@ hr{
 
 /* contact information*/
 #contact{
-	// .background();
+	 //.background();
+	 width: 100%;
 	h2{
 		.section-heading();
 	}

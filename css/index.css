@@ -177,7 +177,7 @@ p {
 }
 hr {
   width: 100%;
-  border: 0.1rem solid black;
+  border: 0.12rem dashed black;
   margin-bottom: 2rem;
 }
 /* header */
@@ -221,11 +221,16 @@ hr {
   width: 100%;
 }
 #bottom-section .skills h2 {
-  border: 0.2rem solid black;
+  border: 0.12rem outset #c3c4c4;
   background-color: #7b9595;
-  width: 50%;
+  width: 25%;
   margin: 0 auto;
   margin-bottom: 1.5rem;
+}
+@media screen and (max-width: 500px) {
+  #bottom-section .skills h2 {
+    width: 50%;
+  }
 }
 #bottom-section .skills table {
   font-family: 'Roboto Slab', serif;
@@ -258,11 +263,16 @@ hr {
   padding-bottom: 2rem;
 }
 #bottom-section .work-history h2 {
-  border: 0.2rem solid black;
+  border: 0.12rem outset #c3c4c4;
   background-color: #7b9595;
-  width: 50%;
+  width: 25%;
   margin: 0 auto;
   margin-bottom: 1.5rem;
+}
+@media screen and (max-width: 500px) {
+  #bottom-section .work-history h2 {
+    width: 50%;
+  }
 }
 #bottom-section .work-history ul {
   border: 1px dashed black;
@@ -274,12 +284,20 @@ hr {
   font-size: 1.8rem;
 }
 /* contact information*/
+#contact {
+  width: 100%;
+}
 #contact h2 {
-  border: 0.2rem solid black;
+  border: 0.12rem outset #c3c4c4;
   background-color: #7b9595;
-  width: 50%;
+  width: 25%;
   margin: 0 auto;
   margin-bottom: 1.5rem;
+}
+@media screen and (max-width: 500px) {
+  #contact h2 {
+    width: 50%;
+  }
 }
 /* footer */
 #footer {
